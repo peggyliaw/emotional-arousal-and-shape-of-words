@@ -71,19 +71,23 @@ Arousal:Group[T.human]                             -0.0079      0.001     -6.700
 Concreteness_Mean_scaled:Arousal                   -0.0013      0.001     -1.559      0.119      -0.003       0.000
 Concreteness_Mean_scaled:Arousal:Group[T.human]     0.0019      0.001      1.717      0.086      -0.000       0.004
 ```
-###interpreting important output
-
 There was no effect of Group (b = -0.000, p = 0.986). This makes sense becasue the values for ShapeScore are the same across group.
 
-There was a main effect of concreteness (b = -0.008, p < .001), meaning that concrete words are spikier.
+There was a main effect of concreteness (b = -0.008, p < .001), meaning that concrete words are spikier. Moreover, the effect of concreteness is stronger in Qwen3 (b = 0.003, p = .001).
 
-There was a main effect of arousal (b = -0.007, p < .001), meaning that arousing words are spikier.
+There was a main effect of arousal (b = -0.007, p < .001), meaning that arousing words are spikier. Moreover, the effect of arousal is stronger in human (b = -0.008, p = .010).
 
 There was no interaction between concreteness and arousal (b = -0.001, p = .119), meaning that the association between arousal and shape doesn't vary across concreteness level.
 
-Lastly, there was no three-way interaction (b = 0.002, p = 0.086), meaning that the effects of concreteness and arousal on shape do not change between human vs. Qwen3.
+Lastly, there was no three-way interaction (b = 0.002, p = 0.086), meaning that the interaction effect of concreteness and arousal on shape does not change between human vs. Qwen3.
 
 ### Implications
 Arousal and concreteness independently predict spikiness because of main effects of both, and the null interaction between arousal and concreteness. The relationship between how arousing a word is and how spiky its shape is perceived to be, do not differ for abstract vs. concrete words. 
 
-Combined effects of arousal and concreteness do no differ between human vs. Qwen3 because of null three-way interaction. However, note that the three-way interaction is marginally significant (p = .086). This suggests that the interplay of these factors could vary between human cognitive process and the embedding model's internal structure.
+Interestingly, the effect of concreteness is stronger in Qwen3, whereas the effect of arousal is stronger in human. This suggests that when making word associations with meanings, human and model may rely on different properties within a word. Specifically, human may rely more on arousal and model may rely more on concreteness. This is interesting as it reflects the fundamental difference between human and model. That is, people are emotional but models seem to lack this affective property.
+
+Combined effects of arousal and concreteness do no differ between human vs. Qwen3, as shown in the null three-way interaction. This may be becasue there was no interaction between arousal and concreteness to begin with. However, note that the three-way interaction is marginally significant (p = .086). This suggests that the interplay of these factors could vary between human cognitive process and the embedding model's internal structure.
+
+So, high arousal words and concrete words are perceived spikier, and thses effects operate independently. Moreover, this pattern stays the same across human and embedding model, suggesting that meaning representations within human may be observable in embedding models.
+
+*Note: ShapeScore is calculated using embedding model for both human and Qwen3. The analyses would be more complete with human-rated shape scores. However, there is no existing database that include shape ratings.*
