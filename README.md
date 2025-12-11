@@ -84,10 +84,12 @@ Lastly, there was no three-way interaction (b = 0.002, p = 0.086), meaning that 
 ### Implications
 Arousal and concreteness independently predict spikiness because of main effects of both, and the null interaction between arousal and concreteness. The relationship between how arousing a word is and how spiky its shape is perceived to be, do not differ for abstract vs. concrete words. 
 
-Interestingly, the effect of concreteness is stronger in Qwen3, whereas the effect of arousal is stronger in human. This suggests that when making word associations with meanings, human and model may rely on different properties within a word. Specifically, human may rely more on arousal and model may rely more on concreteness. This is interesting as it reflects the fundamental difference between human and model. That is, people are emotional but models seem to lack this affective property.
+Interestingly, the effect of concreteness is stronger in Qwen3, whereas the effect of arousal is stronger in human. This suggests that when making associations with words, human and model may rely on different properties within a word. Specifically, human may rely more on arousal and model may rely more on concreteness. This is interesting becasue it reflects the fundamental difference between human and model. That is, people are emotional but models seem to lack this affective property and instead the more objective property (i.e., concreteness) becomes more important when making meaning associations.
 
 Combined effects of arousal and concreteness do no differ between human vs. Qwen3, as shown in the null three-way interaction. This may be becasue there was no interaction between arousal and concreteness to begin with. However, note that the three-way interaction is marginally significant (p = .086). This suggests that the interplay of these factors could vary between human cognitive process and the embedding model's internal structure.
 
 So, high arousal words and concrete words are perceived spikier, and thses effects operate independently. Moreover, this pattern stays the same across human and embedding model, suggesting that meaning representations within human may be observable in embedding models.
+
+Would be interesting to 
 
 *Note: ShapeScore is calculated using embedding model for both human and Qwen3. The analyses would be more complete with human-rated shape scores. However, there is no existing database that include shape ratings.*
