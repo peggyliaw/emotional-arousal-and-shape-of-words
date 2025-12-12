@@ -73,9 +73,9 @@ Concreteness_Mean_scaled:Arousal:Group[T.human]     0.0019      0.001      1.717
 ```
 There was no effect of Group (b = -0.000, p = 0.986). This makes sense becasue the values for ShapeScore are the same across group.
 
-There was a main effect of concreteness (b = -0.008, p < .001), meaning that concrete words are spikier. Moreover, the effect of concreteness is stronger in Qwen3 (b = 0.003, p = .001).
+There was a main effect of concreteness (b = -0.008, p < .001), meaning that concrete words are spikier. Moreover, the effect of concreteness is stronger in Qwen3 (b = 0.003, p = .010).
 
-There was a main effect of arousal (b = -0.007, p < .001), meaning that arousing words are spikier. Moreover, the effect of arousal is stronger in human (b = -0.008, p = .010).
+There was a main effect of arousal (b = -0.007, p < .001), meaning that arousing words are spikier. Moreover, the effect of arousal is stronger in human (b = -0.008, p < .001).
 
 There was no interaction between concreteness and arousal (b = -0.001, p = .119), meaning that the association between arousal and shape doesn't vary across concreteness level.
 
